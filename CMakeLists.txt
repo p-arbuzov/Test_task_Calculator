@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.6) 
+set(CMAKE_CXX_COMPILER "g++-4.2")
+project (TestCalc)
+find_package(GTest REQUIRED)
+include_directories(${GTEST_INCLUDE_DIRS})
+add_executable(TestCalc tests.cpp calculator.cpp) 
+target_link_libraries(TestCalc ${GTEST_LIBRARIES} pthread) 
