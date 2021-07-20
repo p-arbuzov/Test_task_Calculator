@@ -94,13 +94,10 @@ double Calculator::Evaluate(std::string expression_)
 
     bool canBeUnary = true; //if it can be unary operation now
 
-    
-
     int i = 0;
     while (i < expression.size())
     {
         char c = expression[i];
-        //std::cout << c;
 
         if (IsNumberSymbol(c))
         {

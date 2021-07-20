@@ -7,7 +7,6 @@ TEST(test_calc_correct, test1) //Correct tests
     {
         Calculator calc;
         ASSERT_EQ(calc.Evaluate("123 + 42.1"), 165.1);
-
     }
     catch (...)
     {
@@ -22,7 +21,6 @@ TEST(test_calc_correct, test2)
     {
         Calculator calc;
         ASSERT_EQ(calc.Evaluate("-(21 * 0.3)"), -6.3);
-
     }
     catch (...)
     {
@@ -37,7 +35,6 @@ TEST(test_calc_correct, test3)
     {
         Calculator calc;
         ASSERT_EQ(calc.Evaluate("1 + (2 * (2.5 + 2.5 + (3 - 2))) - (3/1.5)"), 11);
-
     }
     catch (...)
     {
@@ -53,7 +50,6 @@ TEST(test_calc_correct, test4)
     {
         Calculator calc;
         ASSERT_EQ(calc.Evaluate("-10 + (8 *  2.5) - (3/1.5)"), 8);
-
     }
     catch (...)
     {
